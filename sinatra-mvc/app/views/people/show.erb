@@ -1,3 +1,6 @@
 <h1><%= "#{@person.first_name} #{@person.last_name}" %></h1>
 <p>Birthdate: <%= "#{@person.birthdate}" %></p>
-<p><%= "#{@message}" %></p>
+<p class="well"><%= "#{@message}" %></p>
+<div class="buttons">
+  <a class="button" href="<%= "/people" %>">Return to Person List</a>
+</div>

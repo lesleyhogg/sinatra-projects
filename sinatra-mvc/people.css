@@ -1,0 +1,26 @@
+/***** layout.erb styles *****/
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+}
+
+.header h1 {
+  font-size: 2em;
+  color: red;
+}
+
+.header h3 {
+  font-size: 1.2em;
+}
+
+/***** form styles *****/
+
+.new-person {
+
+}
+
+.edit-person {
+
+}

@@ -1,7 +1,66 @@
-.new-person {
+/***** layout.erb styles *****/
 
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+}
+
+.header h3 {
+  font-size: 1.2em;
+  color: black;
+}
+
+/***** edit/new form styles *****/
+
+.new-person {
+  padding: 20px;
+  background-color: #efefef;
 }
 
 .edit-person {
-  
+  padding: 20px;
+  background-color: #add8e6;
+}
+
+.errors {
+  color: #dd0000;
+  border: 1px solid #dd0000;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+label {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/**** main people page table styles *****/
+
+td {
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 5px;
+  border: 1px solid #afafaf;
+}
+
+.button:hover {
+  background: #efefef;
 }
