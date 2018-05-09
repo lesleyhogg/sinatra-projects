@@ -1,0 +1,9 @@
+<div class="show">
+  <h1>Anagrams for <%= "#{@word}" %>:</h1>
+  <ul class="anagrams">
+		<% @anagrams.each do |anagram| %>
+			<li><%= "#{anagram}" %></li>
+		<% end %>
+  </ul>
+  <a href="/" class="btn">Try Another Word</a>
+</div>

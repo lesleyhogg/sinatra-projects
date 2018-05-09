@@ -4,9 +4,9 @@ puts "Give me a three-letter word."
 word = gets.chomp.downcase
 
 def find_anagram(word)
-  if word.length === 3
+  if word.length == 3
     array = word.split(//) #abc -> ["a", "b", "c"]
-    anagram = array.permutation.map{|i| i.join}
+    anagram = array.permutation.map {|i| i.join}
     return anagram
   else
     puts "That is not a three-letter word!"
