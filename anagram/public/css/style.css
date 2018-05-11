@@ -1,0 +1,100 @@
+/*** General Styles ***/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #FAFAFA;
+}
+
+.btn {
+  background-color: #FFFFFF;
+  color: #FA3D61;
+  border: solid #FA3D61 1px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #FA3D61;
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #FA3D61;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 span {
+  text-transform: uppercase;
+}
+
+/*** Main Page Styles ***/
+.index {
+  background-image: url(../img/tiles-01.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 100vh;
+}
+
+.index form label {
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.index form input {
+  padding: 16px 0;
+  font-size: 2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.index button {
+  font-size: 2em;
+  width: 100%;
+}
+
+/** Show Page Styles ***/
+.show {
+  background-image: url(../img/tiles-02.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+  text-align: center;
+}
+
+.show h1 {
+  font-weight: 400;
+}
+
+.show h1 span {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.show img {
+  margin: 4em 0;
+}
+
+.show ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.show ul li {
+  font-size: 2em;
+  font-weight: 700;
+  color: #FA3D61;
+}
+
+.show .btn {
+  width: 100%;
+}
+
+.show a {
+  font-size: 2em;
+}

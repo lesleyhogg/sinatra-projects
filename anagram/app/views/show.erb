@@ -1,9 +1,16 @@
 <div class="show">
-  <h1>Anagrams for <%= "#{@word}" %>:</h1>
-  <ul class="anagrams">
-		<% @anagrams.each do |anagram| %>
-			<li><%= "#{anagram}" %></li>
-		<% end %>
-  </ul>
-  <a href="/" class="btn">Try Another Word</a>
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+    <h1>Anagrams for the Word<br/><span><%= "#{@word}" %></span></h1>
+    <img src="/img/arrow.png" alt="downward arrow">
+    <ul class="anagrams">
+    	<% @anagrams.each do |anagram| %>
+    		<li><%= "#{anagram}" %></li>
+    	<% end %>
+    </ul>
+    <a href="/" class="btn btn-default">Try Another Word</a>
+  </div>
+  <div class="col-md-2">
+  </div>
 </div>

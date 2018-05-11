@@ -1,28 +1,12 @@
-class Word 
+class Word
 
   def self.find_anagrams(string)
     # Convert word to an array of letters
-    letters = string.split(//)
+    array = string.downcase.split(//) #abc -> ["a", "b", "c"]
 
-    # Create an array to store our anagrams
-    anagrams = []
-
-    # Loop through each letter in letters
-    letters.each do |letter|
-      # Select the remaining letters
-      remaining = letters.select { |l| l != letter }
-
-      # Create a new word by combining the letter + the remaining letters
-      # Add new word to anagrams array
-      anagrams << letter + remaining.join('')
-
-      # Create a new word by combining the letter + the reverse of the remaining letters
-      # Add new word to anagrams array
-      anagrams << letter + reverse_letters(remaining).join('')
-    end
-
-    # Return anagrams array
-    anagrams
+    #Find every letter permutation
+    anagram = array.permutation.map {|i| i.join}
+    return anagram
   end
 
   def self.reverse_letters(letters)
