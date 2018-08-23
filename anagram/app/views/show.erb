@@ -5,8 +5,10 @@
     <h1>Anagrams for the Word<br/><span><%= "#{@word}" %></span></h1>
     <img src="/img/arrow.png" alt="downward arrow">
     <ul class="anagrams">
-    	<% @anagrams.each do |anagram| %>
-    		<li><%= "#{anagram}" %></li>
+      <% if !@anagrams.nil? %>
+      	<% @anagrams.each do |word| %>
+      		<li><%= "#{word.text}" %></li>
+        <% end %>
     	<% end %>
     </ul>
     <a href="/" class="btn btn-default">Try Another Word</a>

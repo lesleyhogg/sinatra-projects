@@ -8,6 +8,11 @@
       <input type="text" name="word"><br/>
       <button type="submit" class="btn btn-default">Find Anagrams</button>
     </form>
+    <% if @error.present? %>
+      <p class='error'>
+        <%= "#{@error}" %>
+      </p>
+    <% end %>
   </div>
   <div class="col-md-2">
   </div>
