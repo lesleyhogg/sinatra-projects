@@ -3,10 +3,7 @@
   </div>
   <div class="col-md-8">
     <h1>Add a word to the database!</h1>
-    <form action="/words/new" method="post" class="form">
-      <input type="text" name="newword"><br/>
-      <button type="submit" class="btn btn-default">Add the word!</button>
-    </form>
+    <%= erb :"/words/_form" %>
   </div>
   <div class="col-md-2">
   </div>
