@@ -1,8 +1,11 @@
 <h1>Words</h1>
+<a href="/words/new" class="btn btn-index">Add a word!</a>
 <table class="table table-striped">
   <thead>
     <th>Text</th>
     <th>Letters</th>
+    <th></th>
+    <th></th>
   </thead>
   <tbody>
     <% @word.each do |word| %>
@@ -15,6 +18,19 @@
         </td>
         <td>
           <%= "#{word.letters}" %>
+        </td>
+        <td>
+          <a href="<%= "/words/#{word.id}/edit" %>">
+            Edit
+          </a>
+        </td>
+        <td>
+          <form action="<%= "/words/#{word.id}" %>" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <button type="submit" name="btn btn-danger">
+              Delete
+            </button>
+          </form>
         </td>
       </tr>
 

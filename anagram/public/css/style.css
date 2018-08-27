@@ -56,6 +56,10 @@ h1 span {
   width: 100%;
 }
 
+.index .btn-index {
+  margin-top: 50px;
+}
+
 /** Show Page Styles ***/
 .show {
   background-image: url(../img/tiles-02.png);
@@ -97,4 +101,9 @@ h1 span {
 
 .show a {
   font-size: 2em;
+}
+
+/** Table styles **/
+.table {
+  margin-top: 20px;
 }
